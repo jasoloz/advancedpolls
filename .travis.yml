@@ -45,6 +45,7 @@ branches:
   only:
     - master
     - develop
+    - prevent-cheat
     - /^develop-.*$/
     - /^release-.*$/
 
