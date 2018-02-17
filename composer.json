@@ -35,7 +35,7 @@
 	"extra": {
 		"display-name": "Advanced Polls",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.5,<3.3.*@dev"
+			"phpbb/phpbb": ">=3.1.5,<3.2.*@dev"
 		},
 		"version-check": {
 			"host": "jasoloz.github.io",
