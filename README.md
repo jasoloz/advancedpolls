@@ -23,4 +23,5 @@ Current features:
 
 
 <b>Installation:</b>
-Copy the contents inside advancedpolls-master folder of the downloaded file to the ext/wolfsblvt/advancedpolls folder. Make sure that the file named "composer.json" is placed exactly in the mentioned folder.
+- Method 1: using the ZIP downloaded from master branch at GitHub. Copy the contents inside advancedpolls-master folder to the ext/wolfsblvt/advancedpolls folder in your forum (create those folders if it is the first time using this extension). Make sure that the file named "composer.json" is placed exactly in the mentioned folder.
+- Method 2: use the ZIP file from the release. It has the right folder structure, just copy the content to the ext folder in your forum.
