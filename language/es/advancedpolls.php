@@ -8,6 +8,7 @@
  * @author Clemens Husung (Wolfsblvt)
  * @author Initial translation by Raul [ThE KuKa] (https://github.com/phpbb-es)
  * @author Continued translation by javiexin (http://www.exincastillos.es)
+ * @author Continued translation by jasolo (https://github.com/jasoloz)
  */
 
 if (!defined('IN_PHPBB'))
@@ -89,4 +90,5 @@ $lang = array_merge($lang, array(
 	'AP_POLL_MAX_VALUE_EXPLAIN'				=> 'Este es el número máximo de votos que un votante puede otorgar a una misma opción.',
 	'AP_POLL_TOTAL_VALUE'					=> 'Votos totales',
 	'AP_POLL_TOTAL_VALUE_EXPLAIN'			=> 'Este es el número total de votos que un votante puede otorgar, repartidos entre las opciones posibles.',
+	'AP_VOTE_GREATER_THAN_MAXVALUE'			=> 'No puede otorgar un número de votos superior al máximo permitido.',
 ));
