@@ -1,7 +1,7 @@
 advancedpolls
 =============
 
-[![Build Status](https://travis-ci.org/jasoloz/advancedpolls.svg?branch=prevent-cheat)](https://travis-ci.org/jasoloz/advancedpolls)
+[![Build Status](https://travis-ci.org/jasoloz/advancedpolls.svg?branch=master)](https://travis-ci.org/jasoloz/advancedpolls)
 
 Advances the core poll system of phpBB with new features like hiding votes till end, showing poll voters, scoring polls, limiting the votes and more.
 Current features:
