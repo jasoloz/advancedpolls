@@ -87,4 +87,6 @@ $lang = array_merge($lang, array(
 	'AP_POLL_MAX_VALUE_EXPLAIN'				=> 'This is the maximum number of votes that a voter might give to a single option.',
 	'AP_POLL_TOTAL_VALUE'					=> 'Total votes',
 	'AP_POLL_TOTAL_VALUE_EXPLAIN'			=> 'This is the total number of votes that a voter might distribute amongst all options.',
+
+	'AP_VOTE_GREATER_THAN_MAXVALUE'			=> 'You can’t assign a number of votes greater than the maximum value allowed.',
 ));

@@ -2,9 +2,9 @@
 	"name": "wolfsblvt/advancedpolls",
 	"type": "phpbb-extension",
 	"description": "Advances the core poll system of phpBB with new features like hiding votes till end, showing poll voters, limiting the votes and more.",
-	"homepage": "http://pinkes-forum.de/dev/find.php?ext=advancedpolls",
-	"version": "1.2.1-b1",
-	"time": "2015-07-15",
+	"homepage": "https://github.com/jasoloz/advancedpolls",
+	"version": "1.2.2",
+	"time": "2018-02-16",
 	"keywords": ["phpbb", "extension", "advancedpolls", "advanced", "poll"],
 	"license": "GPL-2.0",
 	"authors": [
@@ -17,6 +17,11 @@
 		{
 			"name": "Javier Lopez (javiexin)",
 			"email": "javiexin@gmail.com",
+			"role": "Previous Developer"
+		},
+		{
+			"name": "José Alfonso Solera (jasolo)",
+			"email": "jasolo.f@gmail.com",
 			"role": "Developer"
 		}
 	],
@@ -30,12 +35,13 @@
 	"extra": {
 		"display-name": "Advanced Polls",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.5,<3.2.*@dev"
+			"phpbb/phpbb": ">=3.1.5,<3.3.*@dev"
 		},
 		"version-check": {
-			"host": "pinkes-forum.de",
-			"directory": "/dev/advancedpolls",
-			"filename": "version.json"
+			"host": "jasoloz.github.io",
+			"directory": "/advancedpolls",
+			"filename": "version.json",
+			"ssl": true
 		}
 	}
 }

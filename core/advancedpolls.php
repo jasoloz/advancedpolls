@@ -118,7 +118,7 @@ class advancedpolls
 			}
 
 			// Calculate poll_start and poll_length based on poll_end, if specified in the form
-			$new_poll_end = $this->user->get_timestamp_from_format('Y-n-j-G-i', sprintf('%d-%d-%d-%d-%d', $new_poll_end_ary['year'], $new_poll_end_ary['mon'], $new_poll_end_ary['mday'], $new_poll_end_ary['hours'], $new_poll_end_ary['minutes']));
+			$new_poll_end = $this->user->get_timestamp_from_format('Y-n-j-G-i', sprintf('%d-%d-%d-%02d-%02d', $new_poll_end_ary['year'], $new_poll_end_ary['mon'], $new_poll_end_ary['mday'], $new_poll_end_ary['hours'], $new_poll_end_ary['minutes']));
 
 			$new_poll_length = 0;
 			if (abs($new_poll_end - $poll_end) > 60)
@@ -478,11 +478,20 @@ class advancedpolls
 
 			foreach ($voted_id as $option)
 			{
+				// no changed vote, do nothing
 				if (in_array($option, $cur_voted_id) && ($cur_voted_val[$option] == $voted_val[$option]))
 				{
 					continue;
 				}
 
+				// the vote cannot be greater than the maximum value
+				if ( (int) $voted_val[$option] > $topic_data['wolfsblvt_poll_max_value'])
+				{
+					$message = 'AP_VOTE_GREATER_THAN_MAXVALUE';
+					trigger_error($message);
+				}
+
+				// updates the total number of votes for that option
 				$sql = 'UPDATE ' . POLL_OPTIONS_TABLE . '
 					SET poll_option_total = poll_option_total + ' . (int) $voted_val[$option] . '
 					WHERE poll_option_id = ' . (int) $option . '
