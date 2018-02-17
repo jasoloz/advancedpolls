@@ -1,5 +1,6 @@
 # Opt into fully virtualized infrastructure
-sudo: required
+sudo: false
+dist: precise
 
 language: php
 
@@ -37,7 +38,7 @@ env:
     - EXTNAME="wolfsblvt/advancedpolls"
     - GITREPO="jasoloz/advancedpolls"
     - SNIFF="1"        # Should we run code sniffer on your code?
-    - IMAGE_ICC="1"    # Should we run icc profile sniffer on your images?
+    - IMAGE_ICC="0"    # Should we run icc profile sniffer on your images?
     - EPV="1"          # Should we run EPV (Extension Pre Validator) on your code?
     - PHPBB_BRANCH="3.2.x"
 
@@ -54,7 +55,7 @@ install:
   - cd ../../phpBB3
   - travis/prepare-extension.sh $EXTNAME $PHPBB_BRANCH
   - travis/setup-phpbb.sh $DB $TRAVIS_PHP_VERSION $NOTESTS
-  #- ../jasoloz/advancedpolls/travis/prepare-epv.sh $EPV $NOTESTS
+  - ../jasoloz/advancedpolls/travis/prepare-epv.sh $EPV $NOTESTS
   #- sh -c "if [ '$COVERAGE' != '0' ]; then ../$GITREPO/travis/prepare-coverage.sh $DB $TRAVIS_PHP_VERSION $EXTNAME $PHP_VERSION_FOR_COVERAGE; fi"
 
 before_script:

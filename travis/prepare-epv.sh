@@ -12,11 +12,12 @@ set -e
 set -x
 
 EPV=$1
-TRAVIS_PHP_VERSION=$2
+NOTESTS=$2
 
-if [ "$DB" == "mysqli" -a "$TRAVIS_PHP_VERSION" == "5.5" ]
+if [ "$EPV" == "1" -a "$NOTESTS" == "1" ]
 then
 	cd phpBB
-	composer require phpbb/epv:dev-master --dev --no-interaction
+	composer remove sami/sami --update-with-dependencies --dev --no-interaction
+	composer require phpbb/epv:dev-master --dev --no-interaction --ignore-platform-reqs
 	cd ../
 fi
