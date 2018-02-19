@@ -67,11 +67,13 @@ class pollend extends \phpbb\cron\task\base
 		}
 		$this->db->sql_freeresult($result);
 
+		/* no-notifications
 		// Send notifications for each poll that requires it
 		foreach ($topics as $topic_data)
 		{
 			$this->notification_manager->add_notifications('wolfsblvt.advancedpolls.notification.type.pollended', $topic_data);
 		}
+		*/
 
 		// Setup the next run of this task
 		$this->config->set('wolfsblvt.advancedpolls.pollend_last_gc', $this->this_run);
@@ -85,7 +87,11 @@ class pollend extends \phpbb\cron\task\base
 	*/
 	public function is_runnable()
 	{
-		return (bool) $this->config['wolfsblvt.advancedpolls.activate_notifications'] && $this->config['wolfsblvt.advancedpolls.pollend_gc'];
+		return (bool)
+			/* no-notifications
+			$this->config['wolfsblvt.advancedpolls.activate_notifications'] &&
+			*/
+			$this->config['wolfsblvt.advancedpolls.pollend_gc'];
 	}
 
 	/**
