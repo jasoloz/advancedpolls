@@ -23,4 +23,4 @@ Current features:
 
 
 <b>Installation:</b>
-Copy the contents of the [ZIP file](https://github.com/jasoloz/advancedpolls/releases/download/v1.2.2/advancedpolls.1.2.2.zip) of the latest release to the ext folder of your phpBB forum. Then enable the extension 'Advanced Polls' in Manage extensions (CUSTOMISE tab) in the ACP.
+Copy the contents of the [ZIP file](https://github.com/jasoloz/advancedpolls/releases/download/v1.2.3/advancedpolls.1.2.3.zip) of the latest release to the ext folder of your phpBB forum. Then enable the extension 'Advanced Polls' in Manage extensions (CUSTOMISE tab) in the ACP.
