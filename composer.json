@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Advances the core poll system of phpBB with new features like hiding votes till end, showing poll voters, limiting the votes and more.",
 	"homepage": "https://github.com/jasoloz/advancedpolls",
-	"version": "1.2.2",
-	"time": "2018-02-16",
+	"version": "1.2.3",
+	"time": "2018-02-19",
 	"keywords": ["phpbb", "extension", "advancedpolls", "advanced", "poll"],
 	"license": "GPL-2.0",
 	"authors": [

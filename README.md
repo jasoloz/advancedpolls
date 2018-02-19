@@ -13,7 +13,7 @@ Current features:
 * Moderator permission to see poll voters even if poll is not public
 * Limit voting to people posted in thread
 * Works with all the Ajax calls
-* Notification if hidden poll you voted in has ended
+* ~~Notification if hidden poll you voted in has ended~~
 * Ability to assign multiple votes to a single option
 * Ability to vote incrementally
 * Ability to vote on closed topics
@@ -23,4 +23,4 @@ Current features:
 
 
 <b>Installation:</b>
-Copy the contents of the [ZIP file](https://github.com/jasoloz/advancedpolls/releases/download/v1.2.2/advancedpolls.1.2.2.zip) of the latest realease to the ext folder of your phpBB forum. Then enable the extension 'Advanced Polls' in Manage extensions (CUSTOMISE tab) in the ACP.
+Copy the contents of the [ZIP file](https://github.com/jasoloz/advancedpolls/releases/download/v1.2.2/advancedpolls.1.2.2.zip) of the latest release to the ext folder of your phpBB forum. Then enable the extension 'Advanced Polls' in Manage extensions (CUSTOMISE tab) in the ACP.
