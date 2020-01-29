@@ -25,11 +25,9 @@ class ext extends \phpbb\extension\base
 		{
 			case '': // Empty means nothing has run yet
 
-				/* no-notifications
 				// Enable advanced polls notifications
 				$phpbb_notifications = $this->container->get('notification_manager');
 				$phpbb_notifications->enable_notifications('wolfsblvt.advancedpolls.notification.type.pollended');
-				*/
 				return 'notifications';
 
 			break;
@@ -56,11 +54,9 @@ class ext extends \phpbb\extension\base
 		{
 			case '': // Empty means nothing has run yet
 
-				/* no-notifications
 				// Disable board rules notifications
 				$phpbb_notifications = $this->container->get('notification_manager');
 				$phpbb_notifications->disable_notifications('wolfsblvt.advancedpolls.notification.type.pollended');
-				*/
 				return 'notifications';
 
 			break;
