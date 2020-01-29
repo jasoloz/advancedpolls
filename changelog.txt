@@ -1,5 +1,16 @@
 Actual Version
 **************
+-- Version 1.2.4 --------------
+	• Bug fix: bad syntax in services.yml showed errors in phpBB 3.2.9 and 3.3
+	• Improvement: full translation in Dutch and German language
+	• Improvement: added info icon to the admin button that shows the hidden votes
+	• Removed: Subsilver2 template, not supported since phpBB 3.2
+
+
+###########################################################################
+Past Versions
+*************
+
 -- Version 1.2.1-b1 --------------
 	• NEW: Implemented "Poll duration in hours" - allows to specify the duration of a poll in multiple units (days or hours)
 	• Bug fix: Remove old permission
@@ -7,10 +18,6 @@ Actual Version
 	• Improvement: Improve language describing poll end behavior (defaults)
 	• Workaround: Language file incorrectly loaded from board language rather than user language (core bug)
 
-
-###########################################################################
-Past Versions
-*************
 
 -- Version 1.2.0-b1 --------------
 	• Use new functionality and events in 3.1.5
