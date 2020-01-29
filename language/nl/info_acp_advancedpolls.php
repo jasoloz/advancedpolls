@@ -6,7 +6,7 @@
  * @copyright (c) 2015 Wolfsblvt ( www.pinkes-forum.de )
  * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  * @author Clemens Husung (Wolfsblvt)
- * @author Translation by Beun12 (https://www.phpbb.com/community/memberlist.php?mode=viewprofile&u=1466206)
+ * @author Translation by Beun12 (https://www.phpbb.com/community/memberlist.php?mode=viewprofile&u=1466206) & </Solidjeuh> (https://www.phpbb.com/community/memberlist.php?mode=viewprofile&u=1544706)
  */
 
 if (!defined('IN_PHPBB'))
@@ -40,7 +40,7 @@ $lang = array_merge($lang, array(
 	'AP_SETTINGS_ACP'				=> 'Instellingen',
 
 	'AP_TITLE'						=> 'Geavanceerde Peilingen',
-	'AP_TITLE_EXPLAIN'				=> 'Uitbreiding van de in phpBB aanwezige Peiling systeem met oa.stemmen verbergen tot einde peiling, stemmers tonen, berperken van de stemmers en meer.',
+	'AP_TITLE_EXPLAIN'				=> 'Uitbreiding van de in phpBB aanwezige Peiling systeem met oa.stemmen verbergen tot einde peiling, stemmers tonen, beperken van de stemmers en meer.',
 	'AP_COPYRIGHT'					=> '© 2015 Wolfsblvt (www.pinkes-forum.de) [<a href="http://pinkes-forum.de/dev/find.php">Meer extensies van Wolfsblvt</a>]',
 
 	'AP_SETTINGS'					=> 'Geavanceerde instellingen Peilingen',
@@ -54,11 +54,11 @@ $lang = array_merge($lang, array(
 	'AP_ACT_VOTERS_LIMIT'			=> 'Activeer beperking stemmers',
 	'AP_ACT_VOTERS_LIMIT_EXPLAIN'	=> 'Door activering van deze optie kunnen alleen gebruikers stemmen die in het bewuste onderwerp geschreven hebben.',
 	'AP_ACT_POLL_NO_VOTE'			=> 'Activeer niet stemmen',
-	'AP_ACT_POLL_NO_VOTE_EXPLAIN'	=> 'Wijzigd de standaard "Toon stemmen" link door een "Niet stemmen" link, dit staat niet toe om na het bebijken van de resultaten alsnog te kunnen stemmen tenzij "Stem wijzigen" is geselecteerd.',
+	'AP_ACT_POLL_NO_VOTE_EXPLAIN'	=> 'Wijzig de standaard "Toon stemmen" link door een "Niet stemmen" link, dit staat niet toe om na het bekijken van de resultaten alsnog te kunnen stemmen tenzij "Stem wijzigen" is geselecteerd.',
 	'AP_ACT_SHOW_ORDERED'			=> 'Activeer toon volgorde',
 	'AP_ACT_SHOW_ORDERED_EXPLAIN'	=> 'Activeer deze optie om de resultaten op aflopende volgorde van het aantal stemmen te tonen (hoogste aantal stemmen eerst).',
 	'AP_ACT_POLL_SCORING'			=> 'Activeer peiling score',
-	'AP_ACT_POLL_SCORING_EXPLAIN'	=> 'Activeer de mogelijkheid om verschillende scores aan een peilings opties toe te voegen.',
+	'AP_ACT_POLL_SCORING_EXPLAIN'	=> 'Activeer de mogelijkheid om verschillende scores aan een peiling opties toe te voegen.',
 	'AP_ACT_INCREMENTAL_VOTES'		=> 'Activeer incrementele stemmen',
 	'AP_ACT_INCREMENTAL_VOTES_EXPLAIN'	=> 'Activeer de mogelijkheid om een incrementele stem uit te brengen, terwijl u niet uw beschikbare stemmen vermogens heeft uitgeput.',
 	'AP_ACT_CLOSED_VOTING'			=> 'Activeer gesloten stemmen',
@@ -66,7 +66,7 @@ $lang = array_merge($lang, array(
 	'AP_ACT_POLL_END'				 => 'Activeer einde van een peiling',
 	'AP_ACT_POLL_END_EXPLAIN'		=> 'Staat het toe om een peiling op een bepaalde datum/tijd te sluiten in plaats van een tijdsduur vanaf dat de peiling gestart is.',
 	'AP_ACT_POLL_NOTIFICATIONS'		=> 'Activeer berichtgeving over een peiling',
-	'AP_ACT_POLL_NOTIFICATIONS_EXPLAIN'	=> 'Activeerd het versturen van een bericht naar alle stemmers van een normale of verborgen peiling wanneer deze afgelopen is en de resultaten zichtbaar zijn.',
+	'AP_ACT_POLL_NOTIFICATIONS_EXPLAIN'	=> 'Activeert het versturen van een bericht naar alle stemmers van een normale of verborgen peiling wanneer deze afgelopen is en de resultaten zichtbaar zijn.',
 
 	'AP_DEFAULT_VOTES_CHANGE'		=> 'Selecteer standaard waarde voor het wijzigen van stemmen',
 	'AP_DEFAULT_VOTES_HIDE'			=> 'Selecteer standaard waarde voor het verbergen van stemmen',
