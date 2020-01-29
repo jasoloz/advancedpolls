@@ -23,10 +23,7 @@ class pollended extends \phpbb\notification\type\base
 	*/
 	public function get_type()
 	{
-		/* no-notification
 		return 'wolfsblvt.advancedpolls.notification.type.pollended';
-		*/
-		return null;
 	}
 
 	/**
@@ -47,10 +44,7 @@ class pollended extends \phpbb\notification\type\base
 	*/
 	public function is_available()
 	{
-		/* no-notification
 		return (bool) $this->config['wolfsblvt.advancedpolls.activate_notifications'];
-		*/
-		return false;
 	}
 
 	/**
@@ -99,10 +93,7 @@ class pollended extends \phpbb\notification\type\base
 		}
 		$users = array_unique($users);
 
-		/* no-notification
 		return $this->check_user_notification_options($users, $options);
-		*/
-		return null;
 	}
 
 	/**
