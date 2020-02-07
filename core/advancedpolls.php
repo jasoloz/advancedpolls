@@ -166,6 +166,7 @@ class advancedpolls
 		}
 
 		// Check if this change affects the next run for notifications
+		/* mío
 		if ($this->config['wolfsblvt.advancedpolls.activate_notifications'])
 		{
 			$hidden_poll = (isset($sql_data[TOPICS_TABLE]['sql']['wolfsblvt_poll_votes_hide']) && $sql_data[TOPICS_TABLE]['sql']['wolfsblvt_poll_votes_hide']) ? true : false;
@@ -180,6 +181,7 @@ class advancedpolls
 				}
 			}
 		}
+		*/
 	}
 
 	/**
