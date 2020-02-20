@@ -16,7 +16,8 @@ $(document).ready(function () {
 	// extend the ajax callback for poll votes if voters should be shown
 	if ($.wolfsblvt.advancedpoll_json_data.wolfsblvt_poll_voters_show_topic && !$.wolfsblvt.advancedpoll_json_data.wolfsblvt_poll_votes_hide_topic) {
 		var old_function = phpbb.ajaxCallbacks['vote_poll'];
-		phpbb.addAjaxCallback('vote_poll', function (res) { old_function(res); $.wolfsblvt.extend_callback_advancedpolls_vote_poll_show_voters(res); });
+		//phpbb.addAjaxCallback('vote_poll', function (res) { old_function(res); $.wolfsblvt.extend_callback_advancedpolls_vote_poll_show_voters(res); });
+		phpbb.addAjaxCallback('vote_poll', function (res) { old_function.call(this, res); $.wolfsblvt.extend_callback_advancedpolls_vote_poll_show_voters(res); });
 	}
 
 	// Modify the "view results" link to set the "don't want to vote"
